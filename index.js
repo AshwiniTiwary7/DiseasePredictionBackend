@@ -7,7 +7,7 @@ const route = require('./Routes/Route');
 require('dotenv').config();
 app.use(cors({
     origin: ["https://disease-prediction-backend.vercel.app"],
-    method: ["POST" , "GET", "PUT", "DELETE"],
+    methods: ["POST" , "GET", "PUT", "DELETE"],
     credentials:"true"
 }));
 app.use(express.json());
