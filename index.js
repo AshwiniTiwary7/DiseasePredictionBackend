@@ -8,7 +8,7 @@ require('dotenv').config();
 app.use(cors({
     origin: ["https://disease-prediction-backend.vercel.app"],
     methods: ["POST" , "GET", "PUT", "DELETE"],
-    credentials:"true"
+    credentials:true
 }));
 app.use(express.json());
 app.use('/medLife/v1',route);
